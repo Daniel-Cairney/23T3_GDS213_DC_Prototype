@@ -2199,7 +2199,7 @@ TextureImporter:
         width: 42
         height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2207,6 +2207,27 @@ TextureImporter:
       bones: []
       spriteID: 0db7b63fd0062534fa042aa183c95a55
       internalID: -151423002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interiors_97
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 864
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a4767bacf9ef94c916553d95ed927b
+      internalID: 927041727
       vertices: []
       indices: 
       edges: []
@@ -2319,6 +2340,7 @@ TextureImporter:
       interiors_94: -211809518
       interiors_95: -994054091
       interiors_96: -151423002
+      interiors_97: 927041727
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
