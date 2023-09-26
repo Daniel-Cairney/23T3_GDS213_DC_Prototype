@@ -4,28 +4,25 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 10f;
-    Vector2 lastClickPos;
-    bool moving;
+    public float speed;
+
+    private Rigidbody2D rb;
+    private Vector2 moveVelocity;
+
+    private void Start()
+    {
+        rb= GetComponent<Rigidbody2D>();
+    }
 
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0))
-        {
-            lastClickPos= Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            moving = true;
-        }
+        Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        moveVelocity = moveInput.normalized * speed;
+    }
 
-        if(moving && (Vector2)transform.position != lastClickPos)
-        {
-            float step = speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, lastClickPos, step);
-        }
-
-        else
-        {
-            moving= false;
-        }
+    private void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
     }
 
 
