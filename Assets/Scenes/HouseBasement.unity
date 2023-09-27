@@ -1615,6 +1615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: HouseInterior
+  spawnPosition: {x: -10, y: 2}
 --- !u!61 &681777416
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2689,11 +2690,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3179092719102933449, guid: 15aa1989165b34c42b67ece2e88b9672, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.67
+      value: 6.85
       objectReference: {fileID: 0}
     - target: {fileID: 3179092719102933449, guid: 15aa1989165b34c42b67ece2e88b9672, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.09
+      value: -0.32
       objectReference: {fileID: 0}
     - target: {fileID: 3179092719102933449, guid: 15aa1989165b34c42b67ece2e88b9672, type: 3}
       propertyPath: m_LocalPosition.z
