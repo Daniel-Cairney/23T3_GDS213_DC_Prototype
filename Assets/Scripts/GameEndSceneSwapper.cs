@@ -14,4 +14,9 @@ public class GameEndSceneSwapper : MonoBehaviour
     {
         SceneManager.LoadScene("LoseScene");
     }
+
+    public void LoadTown()
+    {
+        SceneManager.LoadScene("TownScene");
+    }
 }
